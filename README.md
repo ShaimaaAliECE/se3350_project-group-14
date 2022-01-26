@@ -1,3 +1,14 @@
+Node modules aren't included. 
+Make sure that you use:
+    npm install mysql
+    npm install express
+
+We might not use these yet, but we want to in the future.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
