@@ -1,8 +1,13 @@
 let steps = []
 let index = 0;
+let tips = [];
+let sorted = sortArray(20); //this is what we use to create an array and sort it. This will also intialize the steps array.
 
-let sorted = sortArray(10); //this is what we use to create an array and sort it. This will also intialize the steps array.
+console.log(sorted);
 
+for (let i = 0; i < sorted.steps.length; i++){
+    console.log(`Step ${i}: ${sorted.steps[i]}\nDescription: ${sorted.tips[i]}\n----------------------------------------------------------------------------------`);
+}
 /*
 //this is purely test code, it just prints out each index.
 for (let i = 0; i < sorted[0].length; i++){
@@ -15,9 +20,17 @@ function sortArray(n){
     let array = createArray(n);     //create an array with n random numbers
     steps = []; //initialize steps array to blank
     index = 0;  //init the counter 
+    tips = [];
     let sortedArray = mergeSort(array)
     //determine the tips for the steps
-    return [steps, sortedArray];    //return the steps, and the sorted array
+    
+    //create a JSON object and return that?
+    let myJSON = {
+        "steps": steps,
+        "tips": tips,
+        "finalStep": sortedArray
+    };
+    return myJSON;    //return the steps, and the sorted array
 }
 
 //now i need to figure out how to store the state... each time that mergesort is called we need to somehow store an image of the lists.
@@ -49,6 +62,8 @@ function merge(arr1, arr2) {
       else sorted.push(a2.shift());       //else, remove arr2[0] from arr2, add to sorted
     };
     
+    
+    tips[index] = "Merge the values smallest to largest";
     stepBuilder(sorted.concat(a1.slice().concat(a2.slice())));  //add this as a step
     return sorted.concat(a1.slice().concat(a2.slice()));
 }
@@ -56,6 +71,13 @@ function merge(arr1, arr2) {
 function mergeSort(arr){
 
     if (arr.length >= 1){   //if there is anything in the array, add it as a step
+        
+        if (arr.length == 1){
+            tips[index] = "A single number, this is ready to merge."
+        }else{
+            tips[index] = "Split the array";
+        }
+
         stepBuilder(arr);
     }
     
@@ -75,11 +97,12 @@ function stepBuilder(step){
     index++;
 }
 
-let myJSON = {
-    "steps": steps
+function tipsBuilder(s){
+    let top = s[0];
+
 }
 
-console.log(myJSON.steps[0]);
+
 
 
 
