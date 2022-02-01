@@ -1,7 +1,7 @@
 let steps = []
 let index = 0;
 let tips = [];
-let sorted = sortArray(20); //this is what we use to create an array and sort it. This will also intialize the steps array.
+let sorted = sortArray(250); //this is what we use to create an array and sort it. This will also intialize the steps array.
 
 console.log(sorted);
 
@@ -91,20 +91,7 @@ function mergeSort(arr){
     return merge(left, right);
 }
 
-
 function stepBuilder(step){
     steps[index] = step;    //create the steps
     index++;
 }
-
-function tipsBuilder(s){
-    let top = s[0];
-
-}
-
-
-
-
-
-
-
