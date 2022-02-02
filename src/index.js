@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import MergeSortGame from './MergeSortGame';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MergeSortGame  />
   </React.StrictMode>,
   document.getElementById('root')
 );
