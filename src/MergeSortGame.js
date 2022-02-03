@@ -5,13 +5,13 @@ import {sortArray} from "./scripts/mergesort.js"
 
 let data;
 
-
 class MergeSortGame extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             size: props.size,
-            level: props.level
+            level: props.level,
+            step: 0
         }
         
         this.startGame();
@@ -21,6 +21,7 @@ class MergeSortGame extends React.Component{
     startGame(){
         data = sortArray(parseInt(this.state.size));
         console.log(data);
+        
         
     }
     
