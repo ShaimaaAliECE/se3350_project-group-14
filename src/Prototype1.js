@@ -1,54 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Merge Sort Game</title>
-    <link rel="stylesheet" href="css/JSAV.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-    <style>
-    #av {
-      width: 98%;
-      position: relative;
-    }
-    .jsavcounter {
-      position: absolute;
-      top: 15px;
-    }
-    .jsavtree {
-      position: relative;
-      width: 500px;
-      height: 300px;
-    }
-    svg {
-      height: 600px;
-    }
-    path {
-      pointer-events: visible;
-    }
-    .jsavcontrols span {
-      border-radius: 10px;
-      background-color: #88E8F5;
-      border: none;
-      width: 100px;
-      color: #fff;
-      font-family:Arial, Helvetica, sans-serif;
-      font-weight: 500;
-    }
-    </style>
-  </head>
-  <body>
-    <center><h1>Merge Sort Game</h1></center>
-    <div id="av">
-      <div class="jsavcontrols"></div><span class="jsavcounter"></span>
-    </div>
-    <div class="response">
-      <center><h3 style="font-family: Arial, Helvetica, sans-serif; color: red; display: none;" id="error">Incorrect Number Selected</h3></center>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="lib/jquery.transit.js"></script>
-    <script src="lib/raphael.js"></script>
-    <script src="build/JSAV.js"></script>
-    <script>
-    let sampleArray = [10, 13, 99, 25, 30, 9, 4, 89];
+import React from "react";
+import './JSAV'
+import './Prototype1.css'
+import $ from 'jquery';
+
+class Prototype1 extends React.Component {
+    componentDidMount(){
+        let sampleArray = [10, 13, 99, 25, 30, 9, 4, 89];
     var jsav = new JSAV("av");
     
     var arr = jsav.ds.array(sampleArray);
@@ -129,21 +86,27 @@
     });
     jsav.step();
     
+
     jsav.recorded()
-    
-    $(".jsavtreenode").live("hover", function() {
-      //console.log($(this).text(), $(this).offset().left, $(this).offset().top);
-    });
-    $("path").live("hover", function() {
-      //console.log($(this).attr("d"));
-    });
-    </script>
-    <script>
       //handle new style
       $(".jsavbegin").remove()
       $(".jsavend").remove()
       $(".jsavforward").text("Next")
       $(".jsavbackward").text("Previous")
-    </script>
-  </body>
-</html>
+    }
+    render(){
+        return (
+            <>
+                <center><h1>Merge Sort Game</h1></center>
+                <div id="av">
+                  <div className="jsavcontrols"></div><span className="jsavcounter"></span>
+                </div>
+                <div className="response">
+                  <center><h3 style={{fontFamily: "Arial, Helvetica, sans-serif", color: "red", display: "none"}} id="error">Incorrect Number Selected</h3></center>
+                </div>
+            </>
+        );
+    }
+}
+
+export default Prototype1;
