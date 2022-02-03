@@ -5,7 +5,7 @@ Make sure that you use:
 
 We might not use these yet, but we want to in the future.
 
-
+Using index.css for all styles - deleted app.css
 
 
 
