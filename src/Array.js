@@ -1,31 +1,33 @@
 import React from "react";
 import react, {useState} from "react";
 import reactDom from "react-dom";
+import {sortArray} from "./scripts/mergesort.js"
 
+let data;
 
 class Array extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            Parent: props.coords,
-            Size: props.size,
-            StepName: props.step,
-            Values: props.values,
-            Index: 0,
-            mergesort: props.mergesort
+            indexes: props.indexes,
+            values: props.values,
+            xcoord: props.xcoord,
+            ycoord: props.ycoord
         }
     }
-
-
     
+        
 
     render(){
-        return (
-            <h1>Balls</h1>
-        );
+        
+        return (<span class = 'array' style = "right: "><h1> This is an array </h1></span>);
     }
 
+
 }
+
+
+
 
 
 export default Array;

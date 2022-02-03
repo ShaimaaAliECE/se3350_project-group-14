@@ -1,0 +1,12 @@
+.array{
+    position:absolute;
+    border-radius: 10%;
+    border: pink solid 2px;
+    background-color: teal;
+    right: 50%;
+    
+}
+
+.array-input{
+    width: 50px;
+}
