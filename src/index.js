@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import $ from "jquery";
 import MergeSortGame from './MergeSortGame';
 import Array from './Array';
+
 
 ReactDOM.render(
   <React.StrictMode>
