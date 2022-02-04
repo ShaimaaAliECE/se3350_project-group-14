@@ -3,6 +3,7 @@ import react, {useState} from "react";
 import reactDom from "react-dom";
 import {sortArray} from "./scripts/mergesort.js"
 
+
 let data;
 
 class MergeSortGame extends React.Component{
@@ -28,7 +29,7 @@ class MergeSortGame extends React.Component{
 
     render(){
         
-        return (<h1>Balls</h1>);
+        return (<h1><center>Merge Sort Game</center></h1>);
     }
 
 

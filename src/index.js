@@ -7,9 +7,12 @@ import reportWebVitals from './reportWebVitals';
 import MergeSortGame from './MergeSortGame';
 import Array from './Array';
 
+import Layout from './layout';
+
 ReactDOM.render(
   <React.StrictMode>
-    <MergeSortGame size = {10} />
+    <MergeSortGame size = {10} />,
+    <Layout/>
   </React.StrictMode>,
   document.getElementById('root')
 );

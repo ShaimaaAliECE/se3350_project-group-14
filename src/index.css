@@ -19,6 +19,109 @@ code {
 }
 
 .array{
-  position:absolute;
+  /* position:absolute; */
   
 }
+
+
+
+.array-input{
+  width: 50px;
+}
+
+.form{
+  margin-top:10%;
+  width: 50%;
+  margin-left : 25%;
+}
+
+.form2{
+  float: left;
+  width: 50%;
+  margin-left: 10%;
+  
+}
+
+.form3{
+  width: 50%;
+  margin-left: 50%;
+  
+}
+
+.form4{
+  float:left;
+  width: 50%;
+  
+}
+
+.form5{
+  float:right;
+  margin-right: 60%;
+}
+
+.form6{
+  float:left; 
+  width: 50%;
+  margin-left: 80%;
+}
+
+.form7{
+  float:right;
+  width: 50%;
+}
+
+.form8{
+  float:left;
+  width: 50%;
+}
+
+.form9{
+  float:left;
+  width: 50%;
+  margin-left: 5%;
+}
+
+.form10{
+  width: 50%;
+  float:left;
+  margin-left: 30%;
+}
+
+.form11{
+  width: 50%;
+  float:left;
+  margin-left: 35%;
+}
+
+.form12{
+  width: 50%;
+  float:left;
+  margin-left: 50%;
+}
+
+.form13{
+  width: 50%;
+  float:left;
+  margin-left: 55%;
+}
+.form14{
+  width: 50%;
+  float:left;
+  margin-left: 80%;
+}
+
+.form15{
+  width: 50%;
+  float:left;
+  margin-left: 85%;
+}
+
+.button{
+  text-align: center;
+  width:100px;
+  height:40px;
+  margin-left: 30%;
+}
+
+
+
