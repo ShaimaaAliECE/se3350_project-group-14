@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import react, {useState} from "react";
-import {sortArray} from "./scripts/mergesort.js";
+import {sortArray} from "./mergesort.js";
 import Array from './Array';
 
 let data;
@@ -31,16 +31,70 @@ class MergeSortGame extends React.Component{
     getArrays(){
         //check data.steps
         //check the tips -> the tip can help us determine what to do next
-        let ctr = 0;    //gonna be our counter
+        
         let indexes = 0;  //size of array
         let xoff = 100;
-        let yoff = [10, 110, 210, 310, 410, 510, 610, 710, 810]
-        let row = 0;
+        let yoffset = []
         
-        return data.steps.map((num) =>{
-            row = Math.floor(Math.random()*9);
+        
+        let halfStep = ((data.steps.length -2) /2);
+        for (let i = 0; i < halfStep; i++ ){
+            yoffset[i] = 10+i*110;
+        }
+        
+        return data.stepNum.map((num) =>{
+            let ycoord;
+            switch (num){
+                case 1:
+                case 14:
+                    ycoord = yoffset[1];
+                    break;
+                case 2:
+                case 6:
+                case 15:
+                case 19:
+                    ycoord = yoffset[2];
+                    break;
+                case 3:
+                case 4:
+                case 7:
+                case 8:
+                case 16:
+                case 17:
+                case 20:
+                case 21:
+                    ycoord = yoffset[3];
+                    break;
+                case 9:
+                case 10:
+                case 22:
+                case 23:
+                    ycoord = yoffset[4];
+                    break;
+                case 11:
+                case 24:
+                    ycoord = yoffset[5];
+                    break;
+                case 5:
+                case 12:
+                case 18:
+                case 25:
+                    ycoord = yoffset[6];
+                    break;
+                case 13:
+                case 26:
+                    ycoord = yoffset[7];
+                    break;
+                case 27:
+                    ycoord = yoffset[8];
+                    break;
+                default:
+                    ycoord = yoffset[0];
+                    break;
+
+            }
             xoff = xoff*-1;
-            return <Array indexes = {data.steps[ctr].length} values = {data.steps[ctr++]} xcoord = {50 + xoff} ycoord = {yoff[row]} />
+            return <Array indexes = {data.steps[num].length} values = {data.steps[num]} xcoord = {xoff} ycoord = {ycoord} />
         });
 
     }

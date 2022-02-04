@@ -2,6 +2,7 @@ let steps = []
 let index = 0;
 let tips = [];
 let desc = [];
+let stepNum = [];
 
 /*
 console.log(sorted);
@@ -29,6 +30,7 @@ export function sortArray(n){
     //create a JSON object and return that?
     let myJSON = {
         "steps": steps,
+        "stepNum": stepNum,
         "tips": tips,
         "desc":desc,
         "finalStep": sortedArray
@@ -68,6 +70,7 @@ function merge(arr1, arr2) {
     
     tips[index] = "Merge the values smallest to largest";
     desc[index] = "merge";
+    stepNum[index] = index;
     stepBuilder(sorted.concat(a1.slice().concat(a2.slice())));  //add this as a step
     return sorted.concat(a1.slice().concat(a2.slice()));
 }
@@ -79,9 +82,11 @@ function mergeSort(arr){
         if (arr.length == 1){
             tips[index] = "A single number, this is ready to merge."
             desc[index] = "ready"
+            stepNum[index] = index;
         }else{
             tips[index] = "Split the array";
             desc[index] = "split";
+            stepNum[index] = index;
         }
 
         stepBuilder(arr);
