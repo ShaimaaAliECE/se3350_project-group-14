@@ -1,0 +1,170 @@
+#step1 table {
+  margin: auto;
+}
+
+#step2 {
+  margin-left: -50%;
+  display: inline-block;
+}
+
+#step15 {
+  display: inline-block;
+  margin-left: 45%;
+  position: absolute;
+}
+
+#step3 {
+  margin-left: -75%;
+  display: inline-block;
+}
+
+#step7 {
+  display: inline-block;
+  margin-left: 22.5%;
+  position: absolute;
+}
+
+#step16 {
+  display: inline-block;
+  margin-left: 47.5%;
+  position: absolute;
+}
+
+#step20 {
+  display: inline-block;
+  margin-left: 72.5%;
+  position: absolute;
+}
+
+#step4 {
+  margin-left: -82.5%;
+  display: inline-block;
+}
+
+#step5 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 7.5%;
+}
+
+#step6 {
+  margin-left: -75%;
+  display: inline-block;
+}
+
+#step10 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 26%;
+}
+
+#step11 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 31%;
+}
+
+#step19 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 47.5%;
+}
+
+#step23 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 76%;
+}
+
+#step24 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 81%;
+}
+
+#step8 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 22.5%;
+}
+
+#step9 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 32.5%;
+}
+
+#step17 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 47.5%;
+}
+
+#step18 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 57.5%;
+}
+
+#step21 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 72.5%;
+}
+
+#step22 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 82.5%;
+}
+
+#step12 {
+  margin-left: -15%;
+  display: inline-block;
+}
+
+#step25 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 48%;
+}
+
+#step13 {
+  margin-left: -25.5%;
+  display: inline-block;
+}
+
+#step26 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 47%;
+}
+
+#step14 {
+  margin-left: -50%;
+  display: inline-block;
+}
+
+#step27 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 45%;
+}
+
+#step28 {
+  color: green;
+  font-size: 20px;
+}
+
+#step28 table {
+  margin: auto;
+}
+
+table,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+}
