@@ -11,7 +11,7 @@ class Array extends React.Component{
         this.state = {
             indexes: props.indexes,
             values: props.values,
-            xcoord: 960 + props.xcoord,
+            xcoord: 700 + props.xcoord,
             ycoord: props.ycoord,
             step: props.stepNum
         }
@@ -21,7 +21,8 @@ class Array extends React.Component{
 
     render(){
         //check how many indexes there are, depending on that number we need to return a different number of input boxes
-        return (<span className = 'array' id = {this.state.step} style = {{left: this.state.xcoord, top: this.state.ycoord}}><h2> This is an array </h2></span>);
+        console.log(`Values: ${this.state.values}`);
+        return (<span className = 'array' id = {this.state.step} style = {{left: this.state.xcoord, top: this.state.ycoord}}><p>{this.state.values}</p></span>);
     }
 
 

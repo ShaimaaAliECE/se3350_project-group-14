@@ -12,7 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
     <MergeSortGame size = {10} />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('array-space')
 );
 
 
