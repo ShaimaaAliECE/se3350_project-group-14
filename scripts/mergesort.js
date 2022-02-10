@@ -1,8 +1,8 @@
 let steps = []
 let index = 0;
 let tips = [];
+let sorted = sortArray(20); //this is what we use to create an array and sort it. This will also intialize the steps array.
 
-/*
 console.log(sorted);
 
 for (let i = 0; i < sorted.steps.length; i++){
@@ -16,7 +16,7 @@ for (let i = 0; i < sorted[0].length; i++){
 console.log(sorted[1]));    This is how you get the sorted array.
 */             
 
-export function sortArray(n){
+function sortArray(n){
     let array = createArray(n);     //create an array with n random numbers
     steps = []; //initialize steps array to blank
     index = 0;  //init the counter 
@@ -91,9 +91,20 @@ function mergeSort(arr){
     return merge(left, right);
 }
 
+
 function stepBuilder(step){
     steps[index] = step;    //create the steps
     index++;
 }
+
+function tipsBuilder(s){
+    let top = s[0];
+
+}
+
+
+
+
+
 
 
