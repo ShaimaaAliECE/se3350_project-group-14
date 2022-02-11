@@ -24,14 +24,11 @@ class MergeSortGame extends React.Component{
         console.log(data);
         //based on the number of steps, we have to create that many arrays, all with dif sizes
 
-        this.getArrays();
+        //this.getArrays();
         
     }
 
     getArrays(){
-        //check data.steps
-        //check the tips -> the tip can help us determine what to do next
-        
         let indexes = 0;  //size of array
         
         let yoffset = []
@@ -39,12 +36,13 @@ class MergeSortGame extends React.Component{
         
         let halfStep = ((data.steps.length -2) /2);
         for (let i = 0; i < halfStep; i++ ){
-            yoffset[i] = 10+i*110;
+            yoffset[i] = 150+i*50;
         }
         
         return data.stepNum.map((num) =>{
             let ycoord;
             let xdifference;
+            let rOff = 100;
             
             //this switch will assign all yoffsets
             switch (num){
@@ -138,8 +136,52 @@ class MergeSortGame extends React.Component{
                     break;
                 case 13:
                     xdifference = -300;
+                    break;  //this is the last case for the left side of the algorithm.
+                case 14:
+                case 26:
+                    xdifference = 300 + rOff;
+                    break;
+                case 15:
+                    xdifference = 150 + rOff;;
+                    break;
+                case 19: 
+                    xdifference = 450 + rOff;;
+                    break;
+                case 16:
+                    xdifference = 75 + rOff;;
+                    break;
+                case 17: 
+                    xdifference = 225 + rOff;;
+                    break;
+                case 20:
+                    xdifference = 375 + rOff;;
+                    break;
+                case 21:
+                    xdifference = 525 + rOff;;
+                    break;
+                case 22:
+                    xdifference = 475 + rOff;;
+                    break;
+                case 23:
+                    xdifference = 575 + rOff;;
+                    break;
+                case 24:
+                    xdifference = 525 + rOff;;
+                    break;
+                case 25:
+                    xdifference = 450 + rOff;;
+                    break;
+                case 16:
+                    xdifference = 150 + rOff;;
+                    break;
+                case 26:
+                    xdifference = 300 + rOff;;
+                    break;
+                case 18:
+                    xdifference = 150 + rOff;
                     break;
                 default:
+                    console.log('This element did not correspond to a step. It will not render properly. Step:' + num);
                     xdifference = -960;
                     break;
                 

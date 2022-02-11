@@ -6,11 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import $ from "jquery";
 import MergeSortGame from './MergeSortGame';
 import Array from './Array';
-
+import ToolbarTop from './ToolbarTop';
 
 ReactDOM.render(
   <React.StrictMode>
+    <ToolbarTop />
     <MergeSortGame size = {10} />
+    
   </React.StrictMode>,
   document.getElementById('array-space')
 );
