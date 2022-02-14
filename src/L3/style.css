@@ -167,3 +167,55 @@ input {
     outline: none !important;
     border:1px solid rgb(238, 81, 81);
  }
+
+button {
+    width: 75px;
+    white-space: nowrap;
+}
+
+ .controls {
+     position: absolute;
+ }
+
+#c0 {
+    left: calc(50% - 37.5px);
+    top: 110%;
+}
+
+#c1, #c14, #c13 { 
+     left: calc(50% - 75px);
+     top: 110%;
+ }
+
+ #c2, #c5, #c6, #c8, #c11, #c12, #c15, #c16, #c18, #c19, #c21, #c24, #c25, #c26 { /* more than one */
+     width: 150px;
+     left: calc(50% - 75px);
+     top: 110%;
+ }
+
+ #c3, #c4, #c7, #c9, #c10, #c17, #c20, #c22, #c23 { /* one */
+     left: -15.5px;
+     top: 110%;
+ }
+
+ .incorrectBut {
+    box-shadow: 0 0 5px rgb(238, 81, 81);
+    /*padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;*/
+    border: 1px solid rgb(238, 81, 81);
+ }
+
+ .correctBut {
+    box-shadow: 0 0 5px rgba(138, 238, 81);
+    border: 1px solid rgb(138, 238, 81);
+ }
+
+ .menu-btn {
+     width: auto;
+ }
+
+ .lives {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+ }

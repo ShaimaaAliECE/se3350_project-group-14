@@ -22,12 +22,14 @@ export default class ArraySlot extends Component {
                 //new Audio(correct).play();
                 new Audio(wow).play();
                 this.setState({disabled: true});
+                this.props.changeSlotsFilled();
                 this.setState({classN: "val"+this.props.space+" correct"});
             }
             else {
                 //new Audio(incorrect).play();
                 new Audio(bruh).play();
                 this.setState({classN: "val"+this.props.space+" incorrect"});
+                this.props.changeLivesState();
             }
         }
     }
