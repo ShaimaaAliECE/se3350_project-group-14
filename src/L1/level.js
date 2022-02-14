@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { showStep, sortArray } from './mergesort';
 import './style.css';
-export default class levelPage extends Component {
+export default class level extends Component {
     render() {
         return (
             <>
@@ -63,5 +63,3 @@ export default class levelPage extends Component {
         );
     }
 }
-
-        
