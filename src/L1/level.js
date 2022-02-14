@@ -19,9 +19,8 @@ export default class Level extends Component {
         return(
 
             <>   
-                <h1>Mergesort Level 1</h1>
-                <div className = 'description'> </div>
-                <div className = 'controls'> </div>
+                
+
                 {arrays.map(arraySt => (
                     <>{arraySt}</>
                 ))}

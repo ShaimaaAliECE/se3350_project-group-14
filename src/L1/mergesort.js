@@ -29,7 +29,7 @@ export function sortArray(){
         "finalStep": sortedArray
     };
     sorted = myJSON;
-    printSorted();
+    //printSorted();
     return myJSON;    //return the steps, and the sorted array
 }
 

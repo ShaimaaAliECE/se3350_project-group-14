@@ -11,7 +11,7 @@ export default class ArrayStep extends Component {
 
         return(
             <>
-                <div id={"s" +this.props.step} className="step">
+                <div id={"s" +this.props.step} className="step" style = {{display: "none"}}>
                 {arraySlots.map(arraySl => (
                     <>{arraySl}</>
                 ))}
