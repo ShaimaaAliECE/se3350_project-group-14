@@ -13,7 +13,7 @@ export default class Level extends Component {
         arrays[0] = <ArrayStep size={sorted.steps[0].length} step={0} values={sorted.steps[0]} disabled={true}/>
 
         for (let i =1; i < steps; i++) {
-            arrays[i] = <ArrayStep size={sorted.steps[i].length} step={i} values={sorted.steps[i]}/>
+            arrays[i] = <ArrayStep size={sorted.steps[i].length} step={i} values={sorted.steps[i]} disabled = {true}/>
         }
 
         return(

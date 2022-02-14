@@ -15,8 +15,6 @@ let stepCount = 0;
 
 
 export function sortArray(){
-    document.getElementById("startBtn").style.display = "none";
-    document.getElementById("nextBtn").style.display = "inline-block";
     let array = createArray(10);     //create an array with n random numbers
     steps = []; //initialize steps array to blank
     index = 0;  //init the counter 
