@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from './Button';
+import Button from '../Buttons/Button';
+import "./header.css";
 import { Stack } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 
