@@ -1,11 +1,13 @@
 import "./body.css";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Body() 
 {
 
     const textRef = useRef();
+    let nav = useNavigate();
 
     useEffect(() => {
         init(textRef.current, {
@@ -20,7 +22,7 @@ export default function Body()
     <div className="body">
         <h1><span className="title">Sort It!</span></h1>
         <h2>By: <span className="author" ref = {textRef}></span></h2> 
-        <button className="button buttons">Play</button>
+        <button className="button buttons" onClick={() => {nav("/L3/index.js")}}>Play</button>
         <button className="button buttons">Options</button>
         <button className="button buttons">Quit</button>     
     </div>
