@@ -1,33 +1,37 @@
 import React from 'react';
 import react, {useState} from "react";
-import {sortArray} from "./mergesort.js";
-import {showNext, startGame} from './PageHandler.js';
-
+import {showStep, sortArray} from "./mergesort.js";
 
 class ControlBar extends React.Component{
     constructor(props){
-        super(props);
-        this.state = {
-            'displayStart': true,
-            'displayDirections':false
-        }
         
+ 
+        super(props);
+        this.state = {splitClass: '', mergeClass: ''};
+        this.checkButton = this.checkButton.bind(this);   
 
     }
+    checkButton(e) {
+        this.props.changeCurrStepState(this.props.currStep + 1);
+    }
 
-   
     render(){
+        let button = "";
+       
+        if (this.props.step === 1 || this.props.step === 2 || this.props.step === 5 || this.props.step === 6 || this.props.step === 8 || this.props.step === 11 || this.props.step === 12 || this.props.step === 13 || this.props.step === 14 || this.props.step === 15 || this.props.step === 18 || this.props.step === 19 || this.props.step === 21 || this.props.step === 24 || this.props.step === 14 || this.props.step === 25 || this.props.step === 26) {
+            button = <div id={"c" + this.props.step} className='controls'>
+                <button id='split' className={this.state.splitClass} onClick={this.checkButton}>Next</button>
+            </div>;
+        }
+    
+        button = <div id={"c" + this.props.step} className='controls'>
+            <button id='split' className={this.state.splitClass} onClick={this.checkButton}>Next</button>
+        </div>;
+        
         return (
-        <><h1>Mergesort Level 1</h1>
-            <div className='tips'>
-                Welcome to SortIt!<br></br>SortIt! will help you learn about important sorting algorithms used by Computer Scientists and Software Engineers.
-            <br></br>To begin, click the <b>START</b> button.</div>
-            <div className='stepDescription'>
-
-            </div>
-            <div className='controls'> </div>
-            <button id="startBtn" onClick={startGame}>Start</button></>
-            
+            <>
+                 {button}
+            </>
         );
     }
 
