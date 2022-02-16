@@ -1,0 +1,245 @@
+input {
+	padding: 0;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.step {
+    position: absolute;
+}
+
+#s0 {
+   left: calc(50% - 220px);
+}
+
+#s1 {
+    top: 15%;
+    left: calc(25% - 110px);
+}
+
+#s2 {
+    top: 25%;
+    left: calc(12.5% - 44px);
+}
+
+#s3 {
+    top: 35%;
+    left: calc(7.25% - 22px);
+}
+
+#s4 {
+    top: 35%;
+    left: calc(17.75% - 22px);
+}
+
+#s5 {
+    top: 45%;
+    left: calc(12.5% - 44px);
+}
+
+#s6 {
+    top: 25%;
+    left: calc(37.5% - 66px);
+}
+
+#s7 {
+    top: 35%;
+    left: calc(32.25% - 44px);
+}
+
+#s8 {
+    top: 35%;
+    left: calc(42.75% - 44px);
+}
+
+#s9 {
+    top: 45%;
+    left: calc(37.5% - 22px);
+}
+
+#s10 {
+    top: 45%;
+    left: calc(48% - 22px);
+}
+
+#s11 {
+    top: 55%;
+    left: calc(42.75% - 44px);
+}
+
+#s12 {
+    top: 65%;
+    left: calc(37.5% - 66px);
+}
+
+#s13 {
+    top: 75%;
+    left: calc(25% - 110px);
+}
+
+#s14 {
+    top: 15%;
+    right: calc(25% - 110px);
+}
+
+#s15 {
+    top: 25%;
+    right: calc(37.5% - 44px);
+}
+
+#s16 {
+    top: 35%;
+    right: calc(42.75% - 22px);
+}
+
+#s17 {
+    top: 35%;
+    right: calc(32.35% - 22px);
+}
+
+#s18 {
+    top: 45%;
+    right: calc(37.5% - 44px);
+}
+
+#s19 {
+    top: 25%;
+    right: calc(12.5% - 66px);
+}
+
+#s20 {
+    top: 35%;
+    right: calc(17.75% - 22px);
+}
+
+#s21 {
+    top: 35%;
+    right: calc(7.25% - 44px);
+}
+
+#s22 {
+    top: 45%;
+    right: calc(12.25% - 22px);
+}
+
+#s23 {
+    top: 45%;
+    right: calc(2.25% - 22px);
+}
+
+#s24 {
+    top: 55%;
+    right: calc(7.25% - 44px);
+}
+
+#s25 {
+    top: 65%;
+    right: calc(12.5% - 66px);
+}
+
+#s26 {
+    top: 75%;
+    right: calc(25% - 110px);
+}
+
+#s27 {
+    top: 85%;
+    left: calc(50% - 220px);
+ }
+
+ .correct {
+    box-shadow: 0 0 5px rgba(138, 238, 81);
+    border: 1px solid rgb(138, 238, 81);
+ }
+
+ .incorrect {
+    box-shadow: 0 0 5px rgb(238, 81, 81);
+    /*padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;*/
+    border: 1px solid rgb(238, 81, 81);
+ }
+
+
+ .incorrect:focus {
+    outline: none !important;
+    border:1px solid rgb(238, 81, 81);
+ }
+
+button {
+    width: 75px;
+    white-space: nowrap;
+}
+
+ .controls {
+     position: absolute;
+ }
+
+#c0 {
+    left: calc(50% - 37.5px);
+    top: 110%;
+}
+
+#c1, #c14, #c13 { 
+     left: calc(50% - 75px);
+     top: 110%;
+ }
+
+ #c2, #c5, #c6, #c8, #c11, #c12, #c15, #c16, #c18, #c19, #c21, #c24, #c25, #c26 { /* more than one */
+     width: 150px;
+     left: calc(50% - 75px);
+     top: 110%;
+ }
+
+ #c3, #c4, #c7, #c9, #c10, #c17, #c20, #c22, #c23 { /* one */
+     left: -15.5px;
+     top: 110%;
+ }
+
+ .incorrectBut {
+    box-shadow: 0 0 5px rgb(238, 81, 81);
+    /*padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;*/
+    border: 1px solid rgb(238, 81, 81);
+ }
+
+ .correctBut {
+    box-shadow: 0 0 5px rgba(138, 238, 81);
+    border: 1px solid rgb(138, 238, 81);
+ }
+
+ .menu-btn {
+     width: auto;
+ }
+
+ .lives {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+ }
+ 
+#steps {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    border: 2px solid #1565c0;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    width: 300px;
+  }
+  
+  #steps #heading {
+    padding: 8px;
+    margin: -2px;
+    background: #1565c0;
+    color: white;
+    font-weight: 700;
+  }
+  
+  #step {
+    padding: 8px;
+  }
+  

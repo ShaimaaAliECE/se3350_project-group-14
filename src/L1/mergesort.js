@@ -1,23 +1,21 @@
 let steps = []
 let index = 0;
 let tips = [];
-let sorted = sortArray(20); //this is what we use to create an array and sort it. This will also intialize the steps array.
+//let sorted = sortArray(20); //this is what we use to create an array and sort it. This will also intialize the steps array.
 
-console.log(sorted);
-
-for (let i = 0; i < sorted.steps.length; i++){
-    console.log(`Step ${i}: ${sorted.steps[i]}\nDescription: ${sorted.tips[i]}\n----------------------------------------------------------------------------------`);
-}
 /*
 //this is purely test code, it just prints out each index.
 for (let i = 0; i < sorted[0].length; i++){
     console.log(sorted[0][i]);                      THIS IS HOW YOU INDEX THE STEPS ARRAY
 }
 console.log(sorted[1]));    This is how you get the sorted array.
-*/             
+*/
+let sorted = null;
+let stepCount = 0;
 
-function sortArray(n){
-    let array = createArray(n);     //create an array with n random numbers
+
+export function sortArray(){
+    let array = createArray(10);     //create an array with n random numbers
     steps = []; //initialize steps array to blank
     index = 0;  //init the counter 
     tips = [];
@@ -30,11 +28,20 @@ function sortArray(n){
         "tips": tips,
         "finalStep": sortedArray
     };
+    sorted = myJSON;
+    //printSorted();
     return myJSON;    //return the steps, and the sorted array
 }
 
 //now i need to figure out how to store the state... each time that mergesort is called we need to somehow store an image of the lists.
 //maybe this is too complex. Maybe we should just nest hella for statements.
+
+function printSorted() {
+    console.log(sorted);
+    for (let i = 0; i < sorted.steps.length; i++){
+    console.log(`Step ${i}: ${sorted.steps[i]}\nDescription: ${sorted.tips[i]}\n----------------------------------------------------------------------------------`);
+}
+}
 
 function createArray(n){
     let array = [];
@@ -102,7 +109,18 @@ function tipsBuilder(s){
 
 }
 
+export function showStep() {
+    let text = "";
+    for (let i =0; i< sorted.steps[stepCount].length; i++) {
+        text = text + sorted.steps[stepCount][i] + ",";
+        console.log("Step "+ stepCount+": "+sorted.steps[stepCount][i]);
+    }
+    document.getElementById("tip").innerHTML = sorted.tips[stepCount];
+    stepCount++;
+    document.getElementById("step"+stepCount).innerHTML = text.substring(0,text.length-1);
 
+
+}
 
 
 
