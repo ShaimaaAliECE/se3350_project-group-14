@@ -3,6 +3,7 @@ import { Stack } from '@mui/material';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
+import "./Body/body.css";
 
 const LevelSelect = ({ title }) => {
     const onClick = () => {
@@ -22,49 +23,24 @@ const LevelSelect = ({ title }) => {
         let path = '/L3';
         navigate1(path);
     }
+    const routeChangeMenu = () =>{
+        navigate1('/');
+    }
 
     return (
         <>
-            <div className="LevelSelect">
-                <Stack
-                    direction="column"
-                    justifyContent="center"
-                    alignItems="center"
-                    spacing={2}
-                >
-                    <h1><center> {title} </center></h1>
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            backgroundColor: "white"
-                        }}
-                    >
-                        <Button color='cyan' text='L1' onClick={routeChangeL1} />
-                    </div>
-                    <div
-                        text style={{ color: 'black' }}
-
-                    >
-                        <Button color='cyan' text='L2' onClick={routeChangeL2} />
-                    </div>
-                    <div
-
-                    >
-                        <Button color='cyan' text='L3' onClick={routeChangeL3} />
-                    </div>
-                </Stack>
+            <div className = 'body'>
+            <h1>Level Selection</h1>
+            
+                <div className = "navigate">
+                    <button className="button buttons" onClick={() => {routeChangeL1()}}>Level 1</button>
+                    <button className="button buttons" onClick={() => {routeChangeL2()}}>Level 2</button>
+                    <button className="button buttons" onClick={() => {routeChangeL3()}}>Level 3</button>
+                    <button className="button buttons" onClick={() => {routeChangeMenu()}}>Return to Menu</button> 
+                </div>
             </div>
         </>
-    );
-
+    )
 };
-LevelSelect.defaultProps = {
-    title: 'Level Select'
-}
 
-LevelSelect.propTypes = {
-    title: PropTypes.string.isRequired,
-}
 export default LevelSelect;

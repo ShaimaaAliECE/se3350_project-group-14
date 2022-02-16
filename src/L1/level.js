@@ -7,15 +7,32 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default class Level extends Component {
     constructor(props) {
         super(props);
-        this.state = {currStep: 1, sorted: sortArray()};
+        this.state = {currStep: 1, sorted: sortArray(), showModal: false};
         this.changeCurrStepState = this.changeCurrStepState.bind(this);
-   
+        
     }
 
     changeCurrStepState = (currStep) => {
         this.setState({
             currStep: currStep
         });
+        if (this.state.currStep >= 27){
+            this.setState({
+                showModal: true
+            });
+        }
+    }
+
+    restartLevel() {
+        window.location.reload(false);
+    }
+
+    goToMenu() {
+        window.location.href = '../';
+    }
+
+    nextLevel(){
+        window.location.href = './L2'
     }
 
 
@@ -47,7 +64,19 @@ export default class Level extends Component {
                     <>{arraySt}</>
                 ))}
                 </div>
-                
+                <Modal backdrop="static" keyboard={false} show={this.state.showModal}>
+                    <Modal.Header>
+                    <Modal.Title>Tutorial Complete!</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                    You have completed the tutorial! Good work.
+                    </Modal.Body>
+                    <Modal.Footer>
+                        <button class="menu-btn" onClick={this.restartLevel}>Play Again</button>
+                        <button class="menu-btn" onClick={this.nextLevel}>Next Level</button>
+                        <button class="menu-btn" onClick={this.goToMenu}>Return to Menu</button>
+                    </Modal.Footer>
+                </Modal>
             </>
         );
     }

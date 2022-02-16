@@ -7,6 +7,15 @@ input {
 	font-size: 20px;
 }
 
+.tipsFade{
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    30%{opacity: 0.5;}
+    100%{opactiy:1;}
+}
+
 .step {
     position: absolute;
 }
