@@ -51,7 +51,8 @@ export default class Level extends Component {
 
         return(
 
-            <>   
+            <> 
+            <div id = 'main'>
                 <h1>Mergesort Level 1</h1>
                 <div id="steps">
                     <div id="heading">
@@ -64,6 +65,7 @@ export default class Level extends Component {
                     <>{arraySt}</>
                 ))}
                 </div>
+            </div>
                 <Modal backdrop="static" keyboard={false} show={this.state.showModal}>
                     <Modal.Header>
                     <Modal.Title>Tutorial Complete!</Modal.Title>
