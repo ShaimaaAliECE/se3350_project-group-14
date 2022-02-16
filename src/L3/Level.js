@@ -89,11 +89,7 @@ export default class Level extends Component {
                 </Modal>
                 <Modal backdrop="static" keyboard={false} show={this.state.showWinModal}>
                     <Modal.Header>
-<<<<<<< HEAD
                     <Modal.Title>Congratulations!</Modal.Title>
-=======
-                    <Modal.Title>Cogratulations!</Modal.Title>
->>>>>>> 1bcad06ea4943f593150eef8761422ac92a1b274
                     </Modal.Header>
                     <Modal.Body>
                     You beat the level!

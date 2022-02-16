@@ -41,18 +41,18 @@ const LevelSelect = ({ title }) => {
                             backgroundColor: "white"
                         }}
                     >
-                        <Button color='cyan' text='L1' onClick={routeChangeL1} />
+                        <Button color='#4860e6' text='L1' onClick={routeChangeL1} />
                     </div>
                     <div
                         text style={{ color: 'black' }}
 
                     >
-                        <Button color='cyan' text='L2' onClick={routeChangeL2} />
+                        <Button color='#4860e6' text='L2' onClick={routeChangeL2} />
                     </div>
                     <div
 
                     >
-                        <Button color='cyan' text='L3' onClick={routeChangeL3} />
+                        <Button color='#4860e6' text='L3' onClick={routeChangeL3} />
                     </div>
                 </Stack>
             </div>

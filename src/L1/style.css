@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 input {
 	padding: 0;
 	text-align: center;
@@ -6,10 +5,16 @@ input {
 	width: 40px;
 	text-align: center;
 	font-size: 20px;
+    font-family: sans-serif;
+
 }
 
 .step {
     position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(233, 217, 148);
+    border-radius: 5px;
 }
 
 #s0 {
@@ -172,6 +177,11 @@ input {
 button {
     width: 75px;
     white-space: nowrap;
+    font-family: sans-serif;
+    background-color: #83e087;
+    border: 1px solid ;
+    text-align: center;
+    padding: 3px;
 }
 
  .controls {
@@ -219,6 +229,10 @@ button {
     position: absolute;
     right: 5%;
     top: 2%;
+    font-family: sans-serif;
+    font-size: 25px;
+    border: 3px solid #1565c0;
+    padding: 4px;
  }
  
 #steps {
@@ -229,6 +243,7 @@ button {
     color: #000;
     font-family: sans-serif;
     font-size: 0.9rem;
+    font-weight: bold;
     width: 300px;
   }
   
@@ -237,165 +252,12 @@ button {
     margin: -2px;
     background: #1565c0;
     color: white;
-    font-weight: 700;
+    font-weight: bold;
+    font-family: sans-serif;
+
   }
   
   #step {
     padding: 8px;
   }
   
-=======
-#step2 {
-    margin-left: -50%;
-    display: inline-block;
-}
-
-#step15 {
-    display: inline-block;
-    margin-left: 45%;
-    position: absolute;
-}
-
-#step3 {
-    margin-left: -75%;
-    display: inline-block;
-}
-
-#step7 {
-    display: inline-block;
-    margin-left: 22.5%;
-    position: absolute;
-}
-
-#step16 {
-    display: inline-block;
-    margin-left: 47.5%;
-    position: absolute;
-}
-
-#step20 {
-    display: inline-block;
-    margin-left: 72.5%;
-    position: absolute;
-}
-
-#step4 {
-    margin-left: -82.5%;
-    display: inline-block;
-}
-
-#step5 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 7.5%;
-}
-
-#step6 {
-    margin-left: -75%;
-    display: inline-block;
-}
-
-#step10 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 26%;
-}
-
-#step11 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 31%;
-}
-
-#step19 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 47.5%;
-}
-
-#step23 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 76%;
-}
-
-#step24 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 81%;
-}
-
-#step8 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 22.5%;
-}
-
-#step9 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 32.5%;
-}
-
-#step17 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 47.5%;
-}
-
-#step18 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 57.5%;
-}
-
-#step21 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 72.5%;
-}
-
-#step22 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 82.5%;
-}
-
-#step12 {
-    margin-left: -15%;
-    display: inline-block;
-}
-
-#step25 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 48%;
-}
-
-#step13 {
-    margin-left: -25.5%;
-    display: inline-block;
-}
-
-#step26 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 47%;
-}
-
-#step14 {
-    margin-left: -50%;
-    display: inline-block;
-}
-
-#step27 {
-    display: inline-block;
-    position: absolute;
-    margin-left: 45%;
-}
-
-#step28 {
-    color: green;
-    font-size: 20px;
-}
->>>>>>> 1bcad06ea4943f593150eef8761422ac92a1b274

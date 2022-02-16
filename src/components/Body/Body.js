@@ -20,23 +20,23 @@ export default function Body()
         });
     }, []);
 
-    useEffect(() => {
-        init(textRef.current, {
-            loop: false,
-            showCursor: false,
-            startDelay: 2500,
-            strings: ["By: Julia, Devanshi, Jacob, Vikraj, Faris, Omar, Chris"],
-        });
-    }, []);
+    // useEffect(() => {
+    //     init(textRef.current, {
+    //         loop: false,
+    //         showCursor: false,
+    //         startDelay: 2500,
+    //         strings: ["By: Julia, Devanshi, Jacob, Vikraj, Faris, Omar, Chris"],
+    //     });
+    // }, []);
 
     //H1 and H2 are the texts that are being typed while The rest are the buttons and joe mama
   return (
     <div className="body">
         <h1><span className="title" ref = {textRefer}></span></h1>
         <h2><span className="author" ref = {textRef}></span></h2> 
-        <button className="button buttons" onClick={() => {nav("/Levels")}}>Play</button>
-        <button className="button buttons">Options</button>
-        <button className="button buttons">Quit</button>     
+        <button className=" buttons" onClick={() => {nav("/Levels")}}>Play</button>
+        <button className=" buttons">Options</button>
+        <button className=" buttons">Quit</button>     
     </div>
   )
 }
