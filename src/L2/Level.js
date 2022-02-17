@@ -69,6 +69,7 @@ export default class Level extends Component {
         return(
 
             <>   
+            <div id = 'main'>
                 <h1>Mergesort Level 2</h1>
                 <div id="steps">
                     <div id="heading">
@@ -106,6 +107,7 @@ export default class Level extends Component {
                         <button class="menu-btn" onClick={this.goToMenu}>Return to Menu</button>
                     </Modal.Footer>
                 </Modal>
+            </div>
             </>
         );
     }

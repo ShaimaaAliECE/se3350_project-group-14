@@ -16,6 +16,7 @@ export default class Level extends Component {
         this.setState({
             currStep: currStep
         });
+        
         if (this.state.currStep >= 27){
             this.setState({
                 showModal: true

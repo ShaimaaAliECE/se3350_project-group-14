@@ -1,16 +1,13 @@
-import Button from './Button';
-import { Stack } from '@mui/material';
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
+import React from 'react';
+
 import { useNavigate } from "react-router-dom";
 import "./Body/body.css";
 
 const LevelSelect = ({ title }) => {
-    const onClick = () => {
-        console.log('Click')
-    }
-
+    
     let navigate1 = useNavigate();
+
     const routeChangeL1 = () => {
         let path = `/L1`;
         navigate1(path);
