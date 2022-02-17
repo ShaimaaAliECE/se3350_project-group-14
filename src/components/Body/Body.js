@@ -29,7 +29,7 @@ export default function Body()
         });
     }, []);
 
-    //H1 and H2 are the texts that are being typed while The rest are the buttons and joe mama
+//H1 and H2 are the texts that are being typed while The rest are the buttons and joe mama
   return (
     <div className="body">
         <h1><span className="title" ref = {textRefer}></span></h1>

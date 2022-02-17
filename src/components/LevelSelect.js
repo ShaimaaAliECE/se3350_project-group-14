@@ -1,8 +1,7 @@
-import Button from './Button';
-import { Stack } from '@mui/material';
-import React, { Component } from 'react';
+import "./levelSelect.css";
 import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
+
 
 const LevelSelect = ({ title }) => {
     const onClick = () => {
@@ -24,39 +23,15 @@ const LevelSelect = ({ title }) => {
     }
 
     return (
-        <>
-            <div className="LevelSelect">
-                <Stack
-                    direction="column"
-                    justifyContent="center"
-                    alignItems="center"
-                    spacing={2}
-                >
-                    <h1><center> {title} </center></h1>
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            backgroundColor: "white"
-                        }}
-                    >
-                        <Button color='cyan' text='L1' onClick={routeChangeL1} />
-                    </div>
-                    <div
-                        text style={{ color: 'black' }}
+        <div className="LevelSelect">
 
-                    >
-                        <Button color='cyan' text='L2' onClick={routeChangeL2} />
-                    </div>
-                    <div
-
-                    >
-                        <Button color='cyan' text='L3' onClick={routeChangeL3} />
-                    </div>
-                </Stack>
-            </div>
-        </>
+                <h1 className = "Title">Level Select</h1>
+                <div>
+                    <button className = "Button Buttons" onClick={routeChangeL1}>Level 1</button>  
+                    <button className = "Button Buttons" onClick={routeChangeL2}>Level 2</button>
+                    <button className = "Button Buttons" onClick={routeChangeL3}>Level 3</button>     
+                </div>
+        </div>
     );
 
 };
