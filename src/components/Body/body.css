@@ -22,6 +22,21 @@
     font-size: 30px;
 }
 
+
+button{
+    width:auto;
+}
+
+.navigate{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
 .button{
     background-color: #efb8e4; 
     border: none;

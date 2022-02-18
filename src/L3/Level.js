@@ -68,6 +68,7 @@ export default class Level extends Component {
         return(
 
             <>   
+            <div id = 'main'>
                 <h1>Mergesort Level 3</h1>
                 <div id='wrapper'>
                 {arrays.map(arraySt => (
@@ -99,6 +100,7 @@ export default class Level extends Component {
                         <button class="menu-btn" onClick={this.goToMenu}>Return to Menu</button>
                     </Modal.Footer>
                 </Modal>
+            </div>
             </>
         );
     }
