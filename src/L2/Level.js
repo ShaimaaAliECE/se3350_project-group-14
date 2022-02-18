@@ -33,6 +33,10 @@ export default class Level extends Component {
         window.location.reload(false);
     }
 
+    nextLevel(){
+        window.location.href = './L3';
+    }
+
     changeFilledState() {
         this.setState({
             filled: this.state.filled + 1
@@ -65,6 +69,7 @@ export default class Level extends Component {
         return (
 
             <>
+            <div id = 'main'>
                 <h1>Mergesort Level 2</h1>
                 <div id="steps">
                     <div id="heading">
@@ -97,9 +102,11 @@ export default class Level extends Component {
                     </Modal.Body>
                     <Modal.Footer>
                         <button class="menu-btn" onClick={this.restartLevel}>Play Again</button>
+                        <button class="menu-btn" onClick={this.nextLevel}>Next Level</button>
                         <button class="menu-btn" onClick={this.goToMenu}>Return to Menu</button>
                     </Modal.Footer>
                 </Modal>
+            </div>
             </>
         );
     }
