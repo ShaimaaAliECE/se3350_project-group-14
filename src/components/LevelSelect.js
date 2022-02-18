@@ -1,7 +1,8 @@
+
 import React from 'react';
+
 import { useNavigate } from "react-router-dom";
 import "./Body/body.css";
-
 
 const LevelSelect = ({ title }) => {
     
@@ -24,7 +25,6 @@ const LevelSelect = ({ title }) => {
     }
 
     return (
-
         <>
             <div className = 'body'>
             <h1>Level Selection</h1>
@@ -38,7 +38,6 @@ const LevelSelect = ({ title }) => {
             </div>
         </>
     )
-
 };
 
 export default LevelSelect;
