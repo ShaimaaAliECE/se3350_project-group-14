@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Level from './Level';
+import Level from './level';
 import './style.css';
 
 export default class index extends Component {

@@ -22,6 +22,7 @@
     font-size: 30px;
 }
 
+
 button{
     width:auto;
 }
@@ -34,11 +35,13 @@ button{
 
 }
 
+
+
 .button{
     background-color: #efb8e4; 
     border: none;
+    padding: 0;
     color: #000000;
-    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -56,7 +59,8 @@ button{
     border: 2px solid #eb9cdb;
 }
 
-.buttons:hover{
+.buttons:hover
+{
     background-color: white;
     color: black;
 }
