@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'React';
+
 import ArrayStep from './ArrayStep';
 import {sortArray } from './mergesort';
 import Modal from 'react-bootstrap/Modal';
