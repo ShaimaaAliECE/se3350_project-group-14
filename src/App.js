@@ -25,7 +25,7 @@ function App() {
           <Route path="/MergeSort" element={<MergeSortPage />}/>
           <Route path="/QuickSort" element={<QuickSortPage />} />
           <Route path="/BubbleSort" element={<BubbleSortPage />} />
-          <Route path="/AdminLogin" element={<AdminLogin />} />
+          <Route path="/AdminLogin" element={<AdminLogin/>} />
         </Routes>
     </div>
   );
