@@ -16,11 +16,11 @@ function App() {
   return (
     <div className="App">
         <Routes>
-          <Route path = "/" element = {<Body/>}/>
+          <Route path = "/" element = {<Body />}/>
           <Route path = "/Levels" element = {<LevelSelect />}/>
-          <Route path="/L1" element={<L1/>}/>
-          <Route path="/L2" element={<L2/>}/>
-          <Route path="/L3" element={<L3/>}/>
+          <Route path="/L1" element={<L1 />}/>
+          <Route path="/L2" element={<L2 />}/>
+          <Route path="/L3" element={<L3 />}/>
           <Route path="/Algorithms" element={<AlgorithmSelect />}/>
           <Route path="/MergeSort" element={<MergeSortPage />}/>
           <Route path="/QuickSort" element={<QuickSortPage />} />
