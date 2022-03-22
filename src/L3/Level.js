@@ -12,6 +12,10 @@ export default class Level extends Component {
         this.changeCurrStepState = this.changeCurrStepState.bind(this);
         this.changeLivesState = this.changeLivesState.bind(this);
         this.changeFilledState = this.changeFilledState.bind(this);
+            ////////////////////////////////////////////////////////
+            //here we could call a function to send data to the DB//
+            //this would be like user entered level 1             //
+            ////////////////////////////////////////////////////////
     }
 
     changeCurrStepState = (currStep) => {
@@ -29,6 +33,9 @@ export default class Level extends Component {
             this.setState({
                 showLoseModal: true
             });
+            ////////////////////////////////////////////////////////
+            //here we could call a function to send data to the DB//
+            ////////////////////////////////////////////////////////
         }
     }
 
@@ -45,6 +52,9 @@ export default class Level extends Component {
             this.setState({
                 showWinModal: true
             })
+            ////////////////////////////////////////////////////////
+            //here we could call a function to send data to the DB//
+            ////////////////////////////////////////////////////////
         }
     }
     

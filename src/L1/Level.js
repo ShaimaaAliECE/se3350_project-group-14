@@ -10,6 +10,10 @@ export default class Level extends Component {
         super(props);
         this.state = {currStep: 1, sorted: sortArray(), showModal: false};
         this.changeCurrStepState = this.changeCurrStepState.bind(this);
+            ////////////////////////////////////////////////////////
+            //here we could call a function to send data to the DB//
+            //this would be like user entered level 1             //
+            ////////////////////////////////////////////////////////
         
     }
 
@@ -22,6 +26,9 @@ export default class Level extends Component {
             this.setState({
                 showModal: true
             });
+            ////////////////////////////////////////////////////////
+            //here we could call a function to send data to the DB//
+            ////////////////////////////////////////////////////////
         }
     }
 

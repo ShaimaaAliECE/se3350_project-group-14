@@ -13,6 +13,10 @@ export default class Level extends Component {
         this.changeLivesState = this.changeLivesState.bind(this);
         this.changeFilledState = this.changeFilledState.bind(this);
         console.log(this.state.sorted)
+            ////////////////////////////////////////////////////////
+            //here we could call a function to send data to the DB//
+            //this would be like user entered level 1             //
+            ////////////////////////////////////////////////////////
 
     }
 
@@ -46,6 +50,9 @@ export default class Level extends Component {
             this.setState({
                 showWinModal: true
             })
+            ////////////////////////////////////////////////////////
+            //here we could call a function to send data to the DB//
+            ////////////////////////////////////////////////////////
         }
     }
 
