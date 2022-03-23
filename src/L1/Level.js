@@ -3,14 +3,35 @@ import React, { Component } from 'react';
 import ArrayStep from './ArrayStep';
 import {sortArray } from './mergesort';
 import Modal from 'react-bootstrap/Modal';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class Level extends Component {
     constructor(props) {
         super(props);
-        this.state = {currStep: 1, sorted: sortArray(), showModal: false};
+        this.state = {currStep: 1, sorted: sortArray(), showModal: false, timeSpent: 0, timer: ''};
         this.changeCurrStepState = this.changeCurrStepState.bind(this);
         
+    }
+
+    componentDidMount() {
+        //check if user session exist
+        const currentSession = sessionStorage.getItem("session");
+
+        if(!currentSession) {
+            axios.get("http://localhost:5000/create-session").then(function(response) {
+                const session = response.data
+
+                sessionStorage.setItem("session", JSON.stringify(session));
+            }).catch(err => console.log(err))
+        }
+
+        let timer = setInterval(() => {
+            this.setState({
+                timeSpent: this.state.timeSpent+1
+            })
+        }, 1000)
+        this.setState({timer: timer});
     }
 
     changeCurrStepState = (currStep) => {
@@ -19,6 +40,25 @@ export default class Level extends Component {
         });
         
         if (this.state.currStep >= 27){
+            //call axios
+            let session = sessionStorage.getItem("session");
+            session = JSON.parse(session);
+            let algo_id = 1;
+            let level = 1;
+            let status = "Win";
+            clearInterval(this.state.timer)
+            axios.post('http://localhost:5000/create-analytics', 
+                {
+                    session_id: session.id,
+                    algorithm_id: algo_id,
+                    level: level,
+                    status: status,
+                    time_spent: this.state.timeSpent
+                }
+            ).then(function (response) {
+                console.log(response.data)
+            }).catch(err => console.log(err))
+
             this.setState({
                 showModal: true
             });
@@ -55,6 +95,7 @@ export default class Level extends Component {
 
             <> 
             <div id = 'main'>
+                <h2 className="lives" style={{ top: "unset", bottom: "2%" }}>Time (sec): {this.state.timeSpent}</h2>
                 <h1>Mergesort Level 1</h1>
                 <div id="steps">
                     <div id="heading">

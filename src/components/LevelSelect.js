@@ -1,10 +1,24 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 import "./Body/body.css";
 
 const LevelSelect = ({ title }) => {
+
+    
+    useEffect(() => {
+        const currentSession = sessionStorage.getItem("session");
+
+        if(!currentSession) {
+            axios.get("http://localhost:5000/create-session").then(function(response) {
+                const session = response.data
+
+                sessionStorage.setItem("session", JSON.stringify(session));
+            }).catch(err => console.log(err))
+        }
+    }, []);
     
     let navigate1 = useNavigate();
 
@@ -23,6 +37,7 @@ const LevelSelect = ({ title }) => {
     const routeChangeMenu = () =>{
         navigate1('/');
     }
+
 
     return (
         <>
