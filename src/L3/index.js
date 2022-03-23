@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Level from './Level';
-import './style.css';
+import './style.l3.css';
 
 export default class index extends Component {
     render() {
