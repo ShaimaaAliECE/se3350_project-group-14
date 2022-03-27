@@ -1,6 +1,7 @@
 const express = require('express');
 const mysql = require('mysql')
 const cors = require('cors');
+const md5 = require('md5');
 
 const app = express();
 
@@ -21,6 +22,22 @@ connection.connect(function(error) {
 
 app.get('/', (request, response) => {
     response.send("Working");
+});
+
+app.post('/check-admin', (request, response) => {
+    let email = request.body.email;
+    let password = request.body.password;
+
+    if(email && password) {
+        password = md5(password)
+        let sql = `SELECT * FROM admin WHERE email = '${email}' AND password = '${password}'`;
+
+        connection.query(sql, (err, rows) => {
+            response.send(rows)
+        })
+    }else{
+        response.send("Empty email or password")
+    }
 });
 
 app.get('/create-session', (req, res) => {
