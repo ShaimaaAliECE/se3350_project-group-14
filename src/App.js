@@ -3,6 +3,7 @@ import L2 from "./L2";
 import L3 from "./L3";
 import L4 from "./L4";
 import Analytics from "./Admin/Analytics";
+import Login from "./Admin/Login";
 import Body from "./components/Body/Body";
 import LevelSelect from "./components/LevelSelect";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/L2" element={<L2/>}/>
           <Route path="/L3" element={<L3/>}/>
           <Route path="/L4" element={<L4/>}/>
+          <Route path="/admin" element={<Login/>}/>
           <Route path="/admin/analytics" element={<Analytics/>}/>
         </Routes>
     </div>
