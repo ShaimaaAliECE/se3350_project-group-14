@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href = 'style.css'>
+    
+</head>
+<body id = main>
+
+    <center>
+        <div id = 'control'>
+            <p id = 'hint' style = "font-family:monospace; font-size: 12pt;">How does mergesort work?
+            <br>We will show you how here and now. Click the next button to continue.</p>
+            <button onclick = 'hello()'>Next Step</button>
+            <button onclick = level1() style = 'display:none;' id = 'nextLevel' >Proceed to Level 1</button>
+            
+        </div>
+    </center>
+    
+
+    <input id = 'a1' class ='val' type = 'text' maxlength="2" value = '15' disabled = 'true' style = "display: none">
+    <input id = 'a2' class ='val' type = 'text' maxlength="2" value = '7' disabled = 'true' style = "display: none">
+    
+    
+
+    <span class = 'combine2'>
+        <input id = 'a3' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a4' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none">
+    </span>
+
+    <span class = 'combine2 part2'>
+        <input id = 'a5' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a6' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none">
+        <p id = 'note1' style = "font-family:monospace; font-size: 10pt; width:250px; display: none">Notice how these values are already sorted! The same steps were applied to this merged array too!</p>
+    </span>
+
+    <span class = 'combine4'>
+        <input id = 'a7' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a8' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a9' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a10' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none">
+    </span>
+
+    <span class = 'combine4-2'>
+        <input id = 'a11' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a12' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a13' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a14' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none">
+    </span>
+
+    <span class = 'combine8'>
+        <input id = 'a15' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a16' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a17' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a18' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a19' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a20' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a21' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none"><input id = 'a22' class ='val' type = 'text' maxlength="2" value = '' disabled = 'true' style = "display: none">
+    </span>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src = 'handler.js'></script>
+</html>

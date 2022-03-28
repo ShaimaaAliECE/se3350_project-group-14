@@ -23,8 +23,9 @@ const LevelSelect = ({ title }) => {
     let navigate1 = useNavigate();
 
     const routeChangeL1 = () => {
-        let path = `/L1`;
-        navigate1(path);
+        let path = `/tutorial.html`;
+        //navigate1(path);
+        window.location.href = '/tutorial.html';
     }
     const routeChangeL2 = () => {
         let path = '/L2';
