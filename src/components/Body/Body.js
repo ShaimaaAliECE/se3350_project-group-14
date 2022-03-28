@@ -34,7 +34,7 @@ export default function Body()
     <div className="body">
         <h1><span className="title" ref = {textRefer}></span></h1>
         <h2><span className="author" ref = {textRef}></span></h2> 
-        <button className="button buttons" onClick={() => {nav("/Levels")}}>Play</button>
+        <button className="button buttons" onClick={() => {nav("/Algorithms")}}>Play</button>
         <button className="button buttons">Options</button>
         <button className="button buttons">Quit</button>     
     </div>

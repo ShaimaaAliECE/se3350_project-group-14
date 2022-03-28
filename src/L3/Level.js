@@ -147,7 +147,6 @@ export default class Level extends Component {
                     </Modal.Body>
                     <Modal.Footer>
                         <button class="menu-btn" onClick={this.restartLevel}>Play Again</button>
-                        <button class="menu-btn" onClick={this.nextLevel}>Next Level</button>
                         <button class="menu-btn" onClick={this.goToMenu}>Return to Menu</button>
                     </Modal.Footer>
                 </Modal>
@@ -160,6 +159,7 @@ export default class Level extends Component {
                     </Modal.Body>
                     <Modal.Footer>
                         <button class="menu-btn" onClick={this.restartLevel}>Play Again</button>
+                        <button class="menu-btn" onClick={this.nextLevel}>Next Level</button>
                         <button class="menu-btn" onClick={this.goToMenu}>Return to Menu</button>
                     </Modal.Footer>
                 </Modal>
