@@ -1,0 +1,142 @@
+input {
+	padding: 0;
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#main{
+    background-image: linear-gradient(180deg, #a1a7ff, #ffffff);
+    height: 5em;
+    background-repeat: no-repeat;
+}
+
+.val{
+    width: 50px;
+    height: 50px;
+    font-size: 16pt;
+}
+
+#a1{
+    position:absolute;
+    top: 150px;
+    left: 10%;
+}
+#a2{
+    position:absolute;
+    top: 150px;
+    left: calc(12% + 140px);
+}
+
+#control{
+    display:block;
+    width: 50%;
+    background-color: aliceblue;
+    border: #3891f7 3px solid;
+}
+
+.combine2{
+    position:absolute;
+    top: 250px;
+    left: 13%;
+}
+.part2{
+    top:250px;
+    left: 30%;
+}
+
+.combine4{
+    position:absolute;
+    top: 350px;
+    left: 21.5%;
+}
+
+.combine4-2{
+    position:absolute;
+    top: 350px;
+    left: 43%;
+}
+
+.combine8{
+    position:absolute;
+    top: 450px;
+    left: 26.875%;
+}
+
+.comparing{
+    box-shadow: 0 0 25px rgb(247, 151, 242);
+    border: 2px solid rgb(247, 151, 242);
+    background-color: rgb(243, 202, 241);;
+}
+.comparing-1{
+    box-shadow: 0 0 25px rgb(82, 199, 127);
+    border: 2px solid rgb(82, 199, 127);
+    background-color: rgb(173, 252, 203);
+}
+.comparing-2{
+    box-shadow: 0 0 25px rgb(246, 250, 13);
+    border: 2px solid rgb(246, 250, 13);
+    background-color: rgb(242, 243, 178);
+}
+
+.cancelled{
+    background-color:rgb(148, 21, 21);
+    box-shadow: 0 0 25px rgb(253, 1, 1);
+    border: 2px solid rgb(255, 0, 0);
+}
+
+
+.correct {
+    box-shadow: 0 0 5px rgba(138, 238, 81);
+    border: 1px solid rgb(138, 238, 81);
+}
+
+.incorrect {
+    box-shadow: 0 0 5px rgb(238, 81, 81);
+    /*padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;*/
+    border: 1px solid rgb(238, 81, 81);
+}
+
+
+ .incorrect:focus {
+    outline: none !important;
+    border:1px solid rgb(238, 81, 81);
+}
+
+button {
+    
+    background-color: #3891f7;
+    border: solid black 2px;
+    color: white;
+    font-weight: bold;
+    margin: 0 0.3em 0 0.7em;
+    font-size: 14pt;
+}
+
+
+.incorrectBut {
+    box-shadow: 0 0 5px rgb(238, 81, 81);
+    /*padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;*/
+    border: 1px solid rgb(238, 81, 81);
+}
+
+.correctBut {
+    box-shadow: 0 0 5px rgba(138, 238, 81);
+    border: 1px solid rgb(138, 238, 81);
+}
+
+
+.lives {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    border: 5px solid #1565c0;
+    padding: 0 10px 0 10px;
+    font-weight: 600;
+}
+ 
+ 
