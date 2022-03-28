@@ -10,6 +10,10 @@ export default class Stats extends React.Component {
     }
 
     componentDidMount() {
+        let admin = sessionStorage.getItem("admin")
+        if(!admin) {
+            window.location = "/admin"
+        }
         axios.get("http://localhost:5000/display-sessions").then(response => {
             this.setState({
                 sessions: response.data.reverse()

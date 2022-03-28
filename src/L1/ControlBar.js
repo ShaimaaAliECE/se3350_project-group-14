@@ -28,6 +28,9 @@ class ControlBar extends React.Component{
             <button id='split' className={this.state.splitClass} onClick={this.checkButton}>Next</button>
         </div>;
         
+        if (this.props.step ===27) {
+            button = '';
+        }
         return (
             <>
                  {button}

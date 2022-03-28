@@ -42,7 +42,11 @@ export default class Level extends Component {
             lives: this.state.lives-1
         });
         if (this.state.lives === 0) {
+            this.setState({
+                showLoseModal: true
+            });
             //axios for losing
+            
             let session = sessionStorage.getItem("session");
             session = JSON.parse(session);
             let algo_id = 1;
@@ -62,9 +66,6 @@ export default class Level extends Component {
                 console.log(response.data)
             }).catch(err => console.log(err))
 
-            this.setState({
-                showLoseModal: true
-            });
         }
     }
 
@@ -81,6 +82,9 @@ export default class Level extends Component {
             filled: this.state.filled+1
         });
         if (this.state.filled === 67) {
+            this.setState({
+                showWinModal: true
+            })
             //axios for winning
             let session = sessionStorage.getItem("session");
             session = JSON.parse(session);
@@ -102,9 +106,6 @@ export default class Level extends Component {
             }).catch(err => console.log(err))
 
             console.log("win!");
-            this.setState({
-                showWinModal: true
-            })
         }
     }
     

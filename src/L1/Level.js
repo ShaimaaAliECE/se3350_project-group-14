@@ -41,6 +41,9 @@ export default class Level extends Component {
         
         if (this.state.currStep >= 27){
             //call axios
+            this.setState({
+                showModal: true
+            });
             let session = sessionStorage.getItem("session");
             session = JSON.parse(session);
             let algo_id = 1;
@@ -59,9 +62,7 @@ export default class Level extends Component {
                 console.log(response.data)
             }).catch(err => console.log(err))
 
-            this.setState({
-                showModal: true
-            });
+            
         }
     }
 
