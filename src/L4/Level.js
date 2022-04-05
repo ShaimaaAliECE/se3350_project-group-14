@@ -84,7 +84,7 @@ export default class Level extends Component {
             let session = sessionStorage.getItem("session");
             session = JSON.parse(session);
             let algo_id = 1;
-            let level = 3;
+            let level = 4;
             let status = "Win";
             clearInterval(this.state.timer)
             console.log(this.state.timeSpent)
